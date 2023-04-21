@@ -1,9 +1,9 @@
 // setting up the database model, require mongoose
 const mongoose = require("mongoose")
-const {DATABASE_URL} = process.env
+const {DATABASE_URI} = process.env
 
 // Establish Database connection, not much will change from unit 2 
-mongoose.connect(DATABASE_URL, {
+mongoose.connect(DATABASE_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
